@@ -6,8 +6,8 @@ public class Circle {
 
 	private static String formatNumber(double x) {
 		String numberAsString = Double.toString(x);
-		numberAsString = numberAsString.format("%.2f", numberAsString);
-		return formatNumber(numberAsString);
+		numberAsString = String.format("%.2s", numberAsString);
+		return numberAsString;
 
 	}
 
